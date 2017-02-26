@@ -1,0 +1,23 @@
+{
+  "name": "node-jsonrpc2-websocket",
+  "version": "0.0.1",
+  "author": "Tomas Polach",
+  "description": "A boilerplate for a simple JSON-RPC2 API server with HTTP fallback.",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-timeout": "^1.8.0",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "express-websocket": "0.0.1",
+    "morgan": "^1.7.0",
+    "ws": "^1.1.1"
+  },
+  "engines": {
+    "node": "7.2.1",
+    "npm": "3.10.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

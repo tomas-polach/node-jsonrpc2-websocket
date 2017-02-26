@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        body {
+            background-color: linen;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>How to ...</h1>
+
+URL: /monitor-left.html
+<input></input>
+
+URL: /monitor-right.html
+<input></input>
+
+<script type="text/javascript">
+
+  var ws = new WebSocket('ws://localhost:5000/api')
+
+  ws.onopen = function(){
+    ws.send(
+      JSON.stringify({
+        jsonrpc: '2.0',
+        method: 'ping',
+        params: {},
+        id: Date.now().toString()
+      })
+    )
+  }
+
+  ws.onmessage = function(text){
+    console.log(text)
+  }
+
+</script>
+
+</body>
+</html>
