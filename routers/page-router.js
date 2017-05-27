@@ -12,9 +12,9 @@ module.exports = function (app) {
   })
 
   // static pages
-  app.use(express.static('pages/static'))
+  app.use(express.static('public'))
 
-  // add router to app
+  // add router to app at root path level
   app.use('', router)
 
   // ERROR PAGES
