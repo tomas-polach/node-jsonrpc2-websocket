@@ -1,6 +1,6 @@
 # Node JsonRpc2 Websocket Boilerplate
 
-Server boilerplate for JSON-RPC2 APIs using websockets with classic HTTP fallback.
+Server boilerplate for [JSON-RPC2](http://www.jsonrpc.org/specification) APIs using websockets with classic HTTP fallback.
 
 ## To do
 - add client features to JSON-RPC2 module
