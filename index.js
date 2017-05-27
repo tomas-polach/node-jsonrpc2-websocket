@@ -1,6 +1,6 @@
 // configs
 var PORT = 5000
-process.env.TZ = 'Europe/Zurich'
+//process.env.TZ = 'Europe/Zurich'
 
 // dependencies
 var http = require('http')
@@ -22,11 +22,10 @@ if (process.env.NODE_ENV !== 'production') {
 app.use(timeout('30s'))
 // get client ip
 app.use(getClientIp)
-// configure CORS (cross domain availability)
+// configure CORS to allow all origins
 app.use(cors({
   credentials: true,
   origin: function(origin, callback) {
-    // allow any origin
     callback(null, origin)
   }
 }))
