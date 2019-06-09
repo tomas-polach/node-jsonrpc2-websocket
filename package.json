@@ -1,15 +1,18 @@
 {
   "name": "node-jsonrpc2-websocket",
   "version": "0.0.2a",
-  "repository": "tomas-polach/node-jsonrpc2-ws-boilerplate"
+  "repository": "tomas-polach/node-jsonrpc2-ws-boilerplate",
   "license": "MIT",
   "author": "Tomas Polach <tomas@archilogic.com>",
   "description": "Server boilerplate for JSON-RPC2 APIs using websockets with classic HTTP fallback.",
   "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
   "engines": {
     "node": "7.2.1",
     "npm": "3.10.9"
-  }
+  },
   "dependencies": {
     "body-parser": "^1.15.2",
     "connect-timeout": "^1.8.0",
